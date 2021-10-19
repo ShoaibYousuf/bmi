@@ -83,6 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
               GestureDetector(
                 onTap: () {
                   double _h = double.parse(_heightController.text);
+                  //double _heightinF = _h*3.28084;
                   double _w = double.parse(_weightController.text);
                   setState(() {
                     _bmiResult = _w / (_h * _h);
